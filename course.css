@@ -1,0 +1,152 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:300'); */
+
+:root {
+    --primary-color: #0d24f1; 
+    --secondary-color: #8eafec; 
+    --dark-color: #1154e6; 
+    --light-color: #164596; 
+    --success-color: #2ee7c8; 
+    --error-color: #3c5775; 
+    --box-shadow: 0 .5rem 1.5rem rgba{0,0,0,.1};
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: var(--light-color); */
+    background: url('IMG/pexels-pixabay-267415.jpg') no-repeat ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: 'Poppins', sans-serif ;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(url'../CCT/IMG/pexels-ferdous-hasan-14187061.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(53, 125, 173);
+    font-size: 20px;
+    margin-left: 15px;
+
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.308);
+    
+
+}
+
+.nav-links ul {
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-links ul li {
+    padding: 10px;
+    font-family: sans-serif;
+    margin: 0 1.5rem;
+}
+
+.nav-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.nav-links ul li a:hover {
+    color: rgb(8, 8, 8);
+}
+
+.nav-links ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .3rem;
+    background: linear-gradient(to right, #0e34dd, cyan);
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all .3s;
+
+}
+
+.nav-links ul li a:hover::before {
+    opacity: 1;
+    transform: scaleX(1);
+
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .text-box h1{
+        font-size:20px ;
+}
+    .nav-links ul li {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+    }
+    .nav-links{
+        position: fixed;
+        background: #0a0f0f;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 20px;
+    }
+    .row{ 
+        flex-direction: column;
+    }
+
+
+}
+
+footer{
+    padding: 20px;
+   background-color: black;
+}

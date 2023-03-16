@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./mt.css">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./JS/script.js"></script>
+</head>
+<body>
+    <nav >
+        <a href="Home.html"><b>WEXFORD<br>UNIVERSITY</b></a>     
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">NEWS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="login.html">LOGIN</a></li> 
+        </ul>
+     </div>  
+     <i class="fa fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+    <div id="wrapper">
+<div id="let">
+    <div id="signin">
+        <!-- <div id="logo"> -->
+            <!-- <h2>Wexford<br>University</h2> -->
+        <!-- </div> -->
+        <form>
+            <div>
+                <label>Email or Username</label>
+                <input type="text" class="text-input" name="email" placeholder="" required="">
+                
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" class="text-input" name="password" placeholder="" required="">
+                
+            </div>
+            <button  id="click me" type="submit" value="send" class="primary-btn">Sign In</button>
+        </form>
+        <div class="links">
+            <a href="#">Forgot Password</a>
+            <a href="#">Sign In with Facebook or Apple ID</a>
+        </div>
+        <div class="or">
+            <hr class="bar">
+            <span>OR</span>
+            <hr class="bar">
+        </div>
+        <a href="#" class="secondary-btn">Create an account</a>
+
+    </div>
+    <footer id="main-footer">
+        <p>Copyright &copy; 2023, XVT All Right Reserved</p>
+        <div>
+            <a href="#">Terms of use</a> | <a href="#">Privacy Policy</a> 
+        </div>
+    </footer>
+
+
+</div>
+<div id="go">
+    <div id="showcase">
+        <div class="showcas-content">
+           <h1 class="showcase-text">Let's build the 
+            <strong>future</strong></h1> 
+            <a href="#" class="secondary-btn">Register course</a>
+        </div>
+
+    </div>
+
+</div>
+    </div>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+      
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+      
+      </script>
+    <!-- <script>
+        
+        function Submitted() {
+            alert("'Hello!");
+            
+        }
+        user.message=Submitted;
+        document.getElementById("click me").onclick = user.message;
+    </script> -->
+    
+</body>
+</html>
